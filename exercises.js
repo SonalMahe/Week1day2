@@ -1,32 +1,61 @@
 //1.simple function
-function sayHello(){
-   console.log("Hello from Node.js!"); 
+function sayHello() {
+    console.log("Hello from Node.js!");
 }
 sayHello();
 
-//2. Parameters-
 
+//2. Parameters-
 function welcomeUser(name) {
     console.log(`Welcome, ${name}!`)
 }
 welcomeUser("Sonal");
 welcomeUser("Aviraj");
 
+
 //3.Multiple Parameters-
-function subtract(a, b){
+function subtract(a, b) {
     console.log(a - b);
 }
-subtract(10,3);
+subtract(10, 3);
 
-//4. return value-
-function square(number){
-    sum = number* number;
-    console.log(sum);
-}
-square(8);
+
+//4. return value- (Is this also right way ?)
+
+// function square(number){
+//     sum = number* number;
+//     console.log(sum);
+// }
+// square(8);
 
 function square(number) {
     return number * number;
 }
-const result= square(9);
-console.log("The return value of number is" ,+ result);
+const result = square(9);
+console.log("The return value of number is", + result);
+
+
+//5. Profile Function-
+const profile = (firstName, age, isLikeCoding) => {
+    console.log("Hi, I am " + firstName + "." + "I am " + age + " " + "years old, and it is" + " " + isLikeCoding + " that i like coding.");
+    // firstName = "Sonal";
+    // age = 38;
+    // isLikeCoding = true
+}
+profile("Sonal", 38, true);
+
+
+//6. Default Parameters-
+const greetWithTime = (firstName, timeOfDay = "morning") => {
+    console.log("Good " + timeOfDay + "," + firstName + "!")
+};
+greetWithTime("Sonal");
+greetWithTime("Sonal", "evening");
+
+
+
+//7. Calculator Function-
+const calculator= (a, b , operator) =>{
+ if(operator==="add")
+    return a + b
+}
