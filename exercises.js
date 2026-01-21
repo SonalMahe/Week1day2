@@ -76,10 +76,11 @@ console.log(calculator(10,6,""));
 
 
 //8. Arrow function 
-const square= (number) => {
+const arrowSquare= (number) => {
     return number*number;
 }
-console.log(square(11));
+console.log(arrowSquare(11));
+
 
 //9. Bonus Challenge-
 const isAdult= (age) =>{
