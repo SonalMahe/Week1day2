@@ -73,3 +73,21 @@ console.log(calculator(10,6,"subtract"));
 console.log(calculator(10,6,"multiply"));
 console.log(calculator(18,6,"divide"));
 console.log(calculator(10,6,""));
+
+
+//8. Arrow function 
+const square= (number) => {
+    return number*number;
+}
+console.log(square(11));
+
+//9. Bonus Challenge-
+const isAdult= (age) =>{
+    if(age >= 18) {
+return "Hello you are adult!"
+    } else if(age <= 18){
+        return "Hello, you are not adult, you need to wait!"
+    }
+};
+console.log(isAdult(20));
+console.log(isAdult(12));
