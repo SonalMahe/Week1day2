@@ -50,7 +50,7 @@ const greetWithTime = (firstName, timeOfDay = "morning") => {
     console.log("Good " + timeOfDay + "," + firstName + "!")
 };
 greetWithTime("Sonal");
-greetWithTime("Sonal", "evening");
+greetWithTime("Arun", "evening");
 
 
 
